@@ -3,3 +3,5 @@ out/
 *.egg-info
 *.idea
 **/__pycache__/
+filelists/*.txt
+log/
