@@ -653,6 +653,8 @@ class BaseExperiment:
 		parser.add_argument('--gpu', type=int, default=0, help='ID of GPU. Use -1 to run on CPU. Default: 0')
 		parser.add_argument('--no_safe_exit', action='store_true', default=False, help='Do not save model if anything breaks.')
 		parser.add_argument('--uuid', type=str, default="", help="Save name.")
+		parser.add_argument('--test_save_dir', type=str, default="/tmp")
+		parser.add_argument('--test_file_path', type=str, default="/tmp/path.txt")
 		pass
 
 	

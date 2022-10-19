@@ -93,6 +93,8 @@ class PassthruGenerator(torch.nn.Module):
 
 class EPEExperiment(ee.GANExperiment):
 	def __init__(self, args):
+		self.fake_test_path = args.test_file_path
+		self.test_save_dir = args.test_save_dir
 		super(EPEExperiment, self).__init__(args)
 		self.collate_fn_train = ds.JointEPEBatch.collate_fn
 		self.collate_fn_val   = ds.EPEBatch.collate_fn
@@ -109,7 +111,7 @@ class EPEExperiment(ee.GANExperiment):
 		self.fake_name       = str(fake_cfg.get('name'))
 		self.fake_train_path = Path(fake_cfg.get('train_filelist', None))
 		self.fake_val_path   = Path(fake_cfg.get('val_filelist', None))
-		self.fake_test_path  = Path(fake_cfg.get('test_filelist', None))
+		# self.fake_test_path  = Path(fake_cfg.get('test_filelist', None))
 
 		self._log.debug(f'  Fake dataset {self.fake_name} in {self.fake_train_path}[train], {self.fake_val_path}[val], {self.fake_test_path}[TEST].')
 
@@ -395,7 +397,8 @@ class EPEExperiment(ee.GANExperiment):
 	def save_result(self, results, id, iteration_idx="default"):
 		new_img, old_img, filename = results
   
-		filename = datetime.datetime.now().strftime("%Y%m%d%H%M%S.png")
+		# filename = datetime.datetime.now().strftime("%Y%m%d%H%M%S.png")
+		filename = f"{id}.png"
   
 		# TODO: concat enhanced image with raw one and save.
 
@@ -404,17 +407,18 @@ class EPEExperiment(ee.GANExperiment):
 		# 	img_name = [str(t) for t in img_name]
 		# 	img_name = '_'.join(img_name)+'.png'
 		# 	pass
-		raw_img = (old_img[0,...].clamp(min=0,max=1).permute(1,2,0).cpu().numpy() * 255.0).astype(np.uint8)
+
+		# raw_img = (old_img[0,...].clamp(min=0,max=1).permute(1,2,0).cpu().numpy() * 255.0).astype(np.uint8)
 		img = (new_img[0,...].clamp(min=0,max=1).permute(1,2,0).cpu().numpy() * 255.0).astype(np.uint8)
-		contrast = np.concatenate([raw_img, img], axis=1)
+		# contrast = np.concatenate([raw_img, img], axis=1)
   
 		if iteration_idx == 0 and self.uuid != "":
 			iteration_idx = self.uuid  # Save name
 
 		import os
-		os.makedirs(str(self.dbg_dir / self.weight_save / str(iteration_idx)), exist_ok=True)
-		imageio.imwrite(str(self.dbg_dir / self.weight_save / str(iteration_idx) / f'{filename}{self.result_ext}'), img[:,:,:3])
-		imageio.imwrite(str(self.dbg_dir / self.weight_save / str(iteration_idx) / f'{filename}_contrast{self.result_ext}'), contrast[:,:,:3])
+		os.makedirs(self.test_save_dir, exist_ok=True)
+		imageio.imwrite(f"{self.test_save_dir}/{filename}", img[:,:,:3])
+		# imageio.imwrite(str(self.dbg_dir / self.weight_save / str(iteration_idx) / f'{filename}_contrast{self.result_ext}'), contrast[:,:,:3])
 		pass
 	pass
 
