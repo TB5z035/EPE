@@ -1,5 +1,3 @@
-export HOOK_URL=https://hooks.slack.com/services/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
-
 send() {
     DEFAULT=$@
     TEXT=${DEFAULT:-"knock knock"}
@@ -20,20 +18,20 @@ send start
 # python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-11/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-11/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
 # python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-12/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-12/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
 # python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-13/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-13/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
-python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-14/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-14/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
-python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-15/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-15/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
-python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-16/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-16/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
-python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-17/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-17/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
-python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-18/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-18/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
-python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-19/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-19/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
-python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-20/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-20/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
-python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-21/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-21/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
-python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-22/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-22/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
-python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-23/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-23/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
-python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-24/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-24/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
-python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-25/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-25/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
-python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-26/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-26/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
-python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-27/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-27/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
+# python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-14/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-14/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
+# python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-15/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-15/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
+# python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-16/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-16/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
+# python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-17/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-17/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
+# python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-18/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-18/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
+# python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-19/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-19/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
+# python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-20/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-20/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
+# python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-21/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-21/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
+# python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-22/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-22/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
+# python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-23/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-23/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
+# python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-24/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-24/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
+# python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-25/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-25/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
+# python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-26/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-26/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
+# python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-27/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-27/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
 python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-28/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-28/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
 python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-29/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-29/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
 python epe/EPEExperiment.py --test_file_path /data/anomaly_dataset_v2/2022-10-07/18-30/1/filepath.txt --test_save_dir /data/anomaly_dataset_v2/2022-10-07/18-30/1/enhanced_rgb_v --log_dir /tmp TEST config/toy.yaml
